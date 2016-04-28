@@ -30,14 +30,14 @@ $(document).ready(function() {
 
 
 $(document).keydown(function(e) {
-	if (e.which == 88) {
+	if (e.which === 88) {
 		$(".ryu-action").hide();	
 		$(".ryu-cool").show();
 	}
 });
 
 $(document).keyup(function(e) {
-	if (e.which == 88) {
+	if (e.which === 88) {
 		$(".ryu-cool").hide();
 		$(".ryu-still").show();
 	}
