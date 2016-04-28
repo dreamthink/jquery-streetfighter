@@ -10,6 +10,7 @@ body {
 	height: 500px;
 	position: relative;
 	z-index: 1;
+	border: none;
 }
 
 .ryu {
@@ -59,4 +60,8 @@ body {
 	left: 520px;
 }
 
-
+.main h2 {
+	font-family: "Roboto", sans-serif;
+	padding-top: 3em;
+	padding-right: 3em;
+}
