@@ -95,12 +95,12 @@ body {
 
 .hulk-hadouken {
 	background-image: url("../images/hadouken2.gif");
-	width: 556px;
-	height: 900px;
+	width: 156px;
+	height: 90px;
 	display: none;
 	float: right;
 	position: absolute:
-	top: 1670px;
+	top: 167px;
 	right: 520px;
 	z-index: 10;
 }
