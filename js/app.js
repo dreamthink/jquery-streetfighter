@@ -23,8 +23,34 @@ $(document).ready(function() {
 	$(".ryu").mouseup(function() {
 		$(".ryu-throwing").hide();
 		$(".ryu-ready").show();
-	});
+	})
+	$(".hulk-ryu").mouseenter(function() {
+		$(".hulk-ryu-action").hide();
+		$(".hulk-ryu-ready").show();
+	})
+	$(".hulk-ryu").mouseleave(function() {
+		$(".hulk-ryu-action").hide();
+		$(".hulk-ryu-still").show();
+	})
+	
+	$(".hulk-ryu").mousedown(function() {
+		playHadouken();
+		$(".hulk-ryu-action").hide();
+		$(".hulk-ryu-throwing").show();
+		$(".hulk-hadouken").finish().show().animate(
+			{"right": "1020px"},
+			500,
+			function() {
+				$(this).hide();
+				$(this).css("right", "520px");
+			}
+		);
+	})
 
+	$(".hulk-ryu").mouseup(function() {
+		$(".hulk-ryu-throwing").hide();
+		$(".hulk-ryu-ready").show();
+	})
 
 });
 
@@ -43,6 +69,19 @@ $(document).keyup(function(e) {
 	}
 });
 
+$(document).keydown(function(a) {
+	if (a.which === 77) {
+		$(".hulk-ryu-action").hide();
+		$(".hulk-ryu-cool").show();
+	}
+})
+
+$(document).keyup(function(a) {
+	if (a.which === 77) {
+		$(".hulk-ryu-cool").hide();
+		$(".hulk-ryu-ready").show();
+	}
+})
 
 
 function playHadouken () {

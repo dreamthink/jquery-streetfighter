@@ -1,30 +1,32 @@
 body {
-	background-color: #000;
+	background-color: #fff;
 }
 
 .main {
 	background-color: #fff;
 	margin-top: 110px;
 	padding-left: 100px;
+	padding-right: 100px;
 	min-width: 1200px;
 	height: 500px;
 	position: relative;
 	z-index: 1;
-	border: none;
+	border: 1px solid red;
 }
 
 .ryu {
 	float: left;
 	width: 659px;
 	height: 494px;
+	border: 1px solid orange;
 }
 
-.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .hulk-ryu-ready, .hulk-ryu-still, .hulk-ryu-throwing, .hulk-ryu-cool {
 	width: 659px;
 	height: 494px;
 }
 
-.ryu-ready, .ryu-throwing, .ryu-cool {
+.ryu-ready, .ryu-throwing, .ryu-cool, .hulk-ryu-ready, .hulk-ryu-throwing, .hulk-ryu-cool {
 	display: none;
 }
 
@@ -44,8 +46,39 @@ body {
 	background-image: url("../images/ryu-cool.gif");
 }
 
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .hulk-ryu-still, .hulk-ryu-ready, .hulk-ryu-throwing, .hulk-ryu-cool, .hulk-hadouken {
 	background-repeat: no-repeat;
+}
+
+.hulk-ryu {
+	-webkit-filter: hue-rotate(90deg);
+	border: 1px solid black;
+	width: 659px;
+	height: 494px;
+	float: right;
+	margin-top: -495px;
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.hulk-ryu-still {
+	background-image: url("../images/ryu-standing-still.png");
+}
+
+.hulk-ryu-ready {
+	background-image: url("../images/ryu-ready-position.gif");
+}
+
+.hulk-ryu-throwing {
+	background-image: url("../images/ryu-throwing-hadouken.png");
+}
+
+.hulk-ryu-cool {
+	background-image: url("../images/ryu-cool.gif");
 }
 
 .hadouken {
@@ -60,8 +93,20 @@ body {
 	left: 520px;
 }
 
-.main h2 {
-	font-family: "Roboto", sans-serif;
-	padding-top: 3em;
-	padding-right: 3em;
+.hulk-hadouken {
+	background-image: url("../images/hadouken2.gif");
+	width: 556px;
+	height: 900px;
+	display: none;
+	float: right;
+	position: absolute:
+	top: 1670px;
+	right: 520px;
+	z-index: 10;
 }
+
+h3 {
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+}
+
