@@ -11,14 +11,14 @@ body {
 	height: 500px;
 	position: relative;
 	z-index: 1;
-	border: 1px solid red;
+	border: none;
 }
 
 .ryu {
 	float: left;
 	width: 659px;
 	height: 494px;
-	border: 1px solid orange;
+	border: none;
 }
 
 .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .hulk-ryu-ready, .hulk-ryu-still, .hulk-ryu-throwing, .hulk-ryu-cool {
@@ -52,7 +52,7 @@ body {
 
 .hulk-ryu {
 	-webkit-filter: hue-rotate(90deg);
-	border: 1px solid black;
+	border: none;
 	width: 659px;
 	height: 494px;
 	float: right;
@@ -99,7 +99,7 @@ body {
 	height: 90px;
 	display: none;
 	float: right;
-	position: absolute:
+	position: absolute;
 	top: 167px;
 	right: 520px;
 	z-index: 10;
